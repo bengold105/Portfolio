@@ -26,6 +26,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: "https://decker-theme.pages.dev", // change to your domain
+  site: "https://bengold105.github.io/", // change to your domain
+  base: "/Portfolio",
   integrations: [sitemap()]
 });
