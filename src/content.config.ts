@@ -9,7 +9,7 @@ const projects = defineCollection({
         title: z.string().max(50),
         tools: z.preprocess(
             (val) => (Array.isArray(val) ? val : [val]),
-            z.array(z.enum(["TypeScript", "LIVE", "HTML", "JavaScript", "React Native", "Backend API", "Node.js", "Docker", "Tailwind"]))), // change categories here
+            z.array(z.enum(["C#", "C++", "Unity Engine", "Unreal Engine", "Blueprints", "Git", "Custom SDL 2 Engine", "Meta Quest 3", "XR Interaction Toolkit"]))), // change categories here
         year: z.string().max(4),
         liveSite: z.url().optional(),
         github: z.url().optional(),
@@ -36,7 +36,7 @@ const experience = defineCollection({
     loader: file("src/content/resume/experience.yaml"),
     schema: z.object({
         title: z.string().max(70),
-        timeline: z.string().max(15),
+        timeline: z.string().max(30),
         description: z.string().max(500)
     })
 })
