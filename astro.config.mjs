@@ -26,7 +26,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: "https://bengold105.github.io/", // change to your domain
+  site: "https://bengold105.github.io/Portfolio", // change to your domain
   base: "/Portfolio",
   integrations: [sitemap()]
 });
